@@ -47,13 +47,6 @@ baseurl: "/LessOrMore"
 resume_site: 个人简历网站
 github: github地址
 github_username: github用户名称
-FB:
-  comments :
-    provider : duoshuo
-    duoshuo:
-        short_name : 多说账户
-    disqus :
-        short_name : Disqus账户
 ```
 
 如何写文章							{#How-to-write-document}
