@@ -1,8 +1,6 @@
 ---
-layout: post
 title:  FTP和TFTP
 date:   2019-11-03 21:11:00 -0500
-categories: document
 tag: 网络
 ---
 
