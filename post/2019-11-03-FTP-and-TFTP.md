@@ -1,6 +1,16 @@
-### FTP和TFTP
-<pre>Date: 2019-11-03 21:11:00            Tag: 网络</pre>
+### FTP and TFTP
+<pre>Date: 2019-11-03 21:11:00            Tag: Networking</pre>
 
-<p>虽然tftp是基于UDP的，ftp是基于tcp的，但是tftp的传输速度远不及tfp。tftp采用的是简单的停止等待协议，发出去的UDP包必须要等待对方的回答或者超时才能开始下一个UDP发送或者重传。而FTP只要对方有ACK表示有win空间就可以持续的发，所以FTP要比TFTP快很多。<p>
+Trivial File Transfer Protocol (TFTP): A file transfer Protocol based on **UDP** which allows a client to get a file from or put a file onto a remote host. **Today, TFTP is virtually unused for Internet transfers.** A transfer request is always initiated targeting port 69, but the data transfer ports are chosen independently by the sender and receiver during the transfer initialization.
 
+File Transfer Protocol (FTP): A protocal based on TCP to transfer file between client and server.</p>
+  
+##### Why FTP is faster than TFTP?
 
+TFTP use a very simply stop and waiting protocal. It would not send or re-send until receiver responds or an ACK is not eventually received. 
+
+For FTP, it has three modes to tranfer file:
+- Stream mode: Data is sent as a continuous stream, all processing is left up to TCP.
+- Block mode: FTP breaks the data into several blocks (block header, byte count, and data field) and then passes it on to TCP.
+- Compressed mode: Data is compressed using a simple algorithm.
+Data can keep transfer as long as the receiver can handle it.
