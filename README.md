@@ -1,8 +1,11 @@
 # Notes
 ### Internet Architecture and Protocol
 - [FTP and TFTP](post/2019-11-03-FTP-and-TFTP.md)
+- [Flow control and Congestion control](post/2019-11-06-Flow-Control-and-Congestion-Control.md)
 ### Computer Architecture
 - [MIPS Green Sheet](https://inst.eecs.berkeley.edu/~cs61c/resources/MIPS_Green_Sheet.pdf)
 
 ### TO-DO
-- [ ] Flow control and Congestion control
+- [x] Flow control and Congestion control
+- [ ] Cache
+- [ ] RTT RTO calculating

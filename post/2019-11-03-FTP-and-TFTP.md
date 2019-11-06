@@ -7,7 +7,8 @@ File Transfer Protocol (FTP): A protocal based on TCP to transfer file between c
   
 ##### Why FTP is faster than TFTP?
 
-TFTP use a very simply stop and waiting protocal. It would not send or re-send until receiver responds or an ACK is not eventually received. 
+TFTP use a a stop-and-wait flow window control algorithm. It stop for ACK before sending the next data packet, a lost packet causes timeout and retransmission.
+
 
 For FTP, it has three modes to tranfer file:
 - Stream mode: Data is sent as a continuous stream, all processing is left up to TCP.
