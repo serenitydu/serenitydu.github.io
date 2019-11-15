@@ -34,6 +34,7 @@ The receiver reports congestion implicitly by sending duplicate acknowledgements
     ```
     if(cwnd <= ssthresh){
         //Slow start
+        //每当有一个报文段被确认，CWND就增加1个MSS大小。这样CWND的值就随着网络往返时间(Round Trip Time,RTT)呈指数级增长
         each time receive an ACK:
             cwnd = cwnd + MSS
     }else{
